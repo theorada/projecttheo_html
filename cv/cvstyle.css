@@ -90,3 +90,11 @@ nav a:hover {
   margin-bottom: 40px;
   text-align: left;
 }
+
+.profile-photo {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;   
+  overflow: hidden;     
+  flex-shrink: 0;       
+}
