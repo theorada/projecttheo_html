@@ -137,3 +137,10 @@ body {
   background-color: #fff;
   color: #333;
 }
+
+#cv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 20px 60px; 
+}
