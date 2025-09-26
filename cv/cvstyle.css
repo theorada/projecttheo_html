@@ -26,3 +26,10 @@ nav a {
 nav a:hover {
   color: #ffdddd;
 }
+
+.cv-container {
+  max-width: 900px;
+  margin: 100px auto 50px;
+  padding: 20px;
+  text-align: center;
+}
