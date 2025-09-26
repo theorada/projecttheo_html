@@ -133,3 +133,7 @@ nav a:hover {
   display: inline-block;
 }
 
+body {
+  background-color: #fff;
+  color: #333;
+}
