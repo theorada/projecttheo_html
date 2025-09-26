@@ -104,3 +104,19 @@ nav a:hover {
   height: 100%;
   object-fit: cover; 
 }
+
+.profile-info h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.profile-info h3 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin: 5px 0;
+  color: #ddd;
+}
+
+.profile-info .email {
+  font-size: 1rem;
+  color: #bbb;
+}
