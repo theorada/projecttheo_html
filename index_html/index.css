@@ -17,3 +17,11 @@ nav {
   left: 0;
   z-index: 1000;
 }
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
