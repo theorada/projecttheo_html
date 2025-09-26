@@ -29,3 +29,13 @@ nav a {
 nav a:hover {
   color: #ffdddd;
 }
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
