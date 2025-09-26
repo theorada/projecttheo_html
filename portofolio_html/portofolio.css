@@ -92,3 +92,10 @@ nav a:hover {
   align-items: center;
   overflow: hidden;
 }
+
+.portfolio-item p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
