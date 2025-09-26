@@ -46,3 +46,9 @@ nav a:hover {
   margin: 5px 0;
   color: #ddd;
 }
+
+#cv .email {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #bbb;
+}
