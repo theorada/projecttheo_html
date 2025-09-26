@@ -56,3 +56,11 @@ nav a:hover {
   margin-top: 10px;
   font-weight: 600;
 }
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;  
+  overflow: hidden;
+  margin: 0 auto 10px; 
+}
