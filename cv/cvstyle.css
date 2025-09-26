@@ -65,3 +65,10 @@ nav a:hover {
   font-size: 1.3rem;
   text-transform: uppercase;
 }
+
+.cv-section p,
+.cv-section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #eee;
+}
