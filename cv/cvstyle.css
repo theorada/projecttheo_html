@@ -81,3 +81,12 @@ nav a:hover {
 .cv-section ul li {
   margin: 5px 0;
 }
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+}
