@@ -75,3 +75,10 @@ nav a:hover {
   margin: 30px 0;
   font-size: 2rem;
 }
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 0 10px;
+}
