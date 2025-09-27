@@ -4,7 +4,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar */
+
 nav {
   width: 100%;
   background-color: #000;
@@ -28,7 +28,7 @@ nav a:hover {
   color: #ffdddd;
 }
 
-/* CV Section */
+
 .cv-container {
   max-width: 900px;
   margin: 100px auto 50px;
@@ -68,7 +68,6 @@ nav a:hover {
   text-transform: uppercase;
 }
 
-.cv-section p,
 .cv-section ul {
   font-size: 1rem;
   line-height: 1.6;
