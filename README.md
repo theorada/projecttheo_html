@@ -1,58 +1,83 @@
-# LAPORAN PRATIKUM MEMBUAT WEBSITE MENGGUNAKAN HTML & CSS
+# 📑 Laporan Pratikum
+**Membuat Website Menggunakan HTML & CSS**
 
-LAPORAN PRATIKUM MEMBUAT WEBSITE MENGGUNAKAN HTML&CSS   Identitas mahasiswa: Nama: Inyoman Theo Ardiles Rada NIM:42430018 Dosen pengampu: Ir. Gede Humaswara Prathama, S.T., M.T Program Studi: Teknologi Informasi, Fakultas Teknik dan Informatika, Universitas Pendidikan Nasional     PENJELASAN DARI SETIAP BAGIAN HTML&CSS:  BAGIAN INDEX HTML: 
-     PENJELASAN   1. Deklarasi & Struktur Dasar <!DOCTYPE html>  Menyatakan bahwa dokumen menggunakan standar HTML5. <html lang="en"  Tag pembuka HTML, dengan atribut lang="en" yang menunjukkan bahwa bahasa utama halaman adalah Bahasa Inggris.  
+---
 
+## 🧑‍🎓 Identitas Mahasiswa
+- **Nama**: Inyoman Theo Ardiles Rada  
+- **NIM**: 42430018  
+- **Dosen Pengampu**: Ir. Gede Humaswara Prathama, S.T., M.T  
+- **Program Studi**: Teknologi Informasi  
+- **Fakultas**: Teknik dan Informatika  
+- **Universitas**: Universitas Pendidikan Nasional  
 
-2. Bagian Head <head> ... </head> Bagian yang berisi metadata halaman.  - <meta charset="UTF-8"  Mengatur encoding karakter menjadi UTF-8 agar mendukung berbagai bahasa dan simbol. - <meta name="viewport" content="width=device-width, initial-scale=1.0"  Membuat halaman web responsif pada perangkat mobile. - <title>My portofolio</title>  Menentukan judul halaman yang tampil pada tab browser. - <link rel="stylesheet" href="index.css"  Menghubungkan halaman HTML dengan file CSS eksternal untuk styling.  3. Bagian Body <body> ... </body>  Bagian utama yang ditampilkan di browser.  a. Navigasi Website <nav>     <a href="index.html" Home</a>     <a href="cv.html" CV</a>     <a href="portofolio.html" Portofolio</a> </nav>  - <nav> → Elemen semantik untuk menampung link navigasi utama. - <a href="..."  Hyperlink menuju halaman lain (Home, CV , dan Portofolio).  b. Landing Section <section id="landing"     <div class="profile-icon"       <img src="DSC04273.JPG" alt="Foto Profile"     </div>     <h1>WELCOME TO MY WEBSITE</h1> </section>  - <section id="landing"  Bagian utama landing page dengan id unik “landing”. - <div class="profile-icon"  Wadah untuk ikon atau foto profil, dapat distyling menggunakan CSS. - <img src="DSC04273.JPG" alt="Foto Profile"  Menampilkan gambar profil dengan atribut alt sebagai teks alternatif. - <h1>WELCOME TO MY WEBSITE</h1>  Heading utama halaman yang berfungsi sebagai sambutan.  4. Penutup </body>  Menutup bagian konten utama. </html>  Menutup dokumen HTML.  
+---
 
-BAGIAN INDEX CSS: 
-PENJELASAN: 1. IMPORT FONT:  • @importurl('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap' Mengimpor font 'Poppins' dari Google Fonts dengan ketebalan 400 (normal) dan 600 (semi-bold). Properti 'display=swap' memastikan teks tetap muncul dengan font cadangan sebelum font utama selesai dimuat.   
-
-
-2. RESET DASAR (*)= Selector * disebut universal selector, artinya aturan ini berlaku untuk semua elemen HTML di dalam halaman.tujuannya untuk melakukan reset CSS, supaya gaya bawaan browser tidak mengganggu desain yang kita buat. • margin: 0;  Menghapus jarak luar default semua elemen. • padding: 0; Menghapus jarak dalam default semua elemen. • box-sizing: border-box;  Menghitung ukuran elemen termasuk border dan padding (lebih mudah diatur). • font-family: 'Poppins', sans-serif; Mengatur font default ke Poppins, dengan cadangan sans-serif. 3. NAVIGASI (nav) = mengatur menu navigasi pada website • width: 100%;  Lebar penuh. • background-color: #000; Warna latar hitam. • padding: 15px 0; Jarak dalam atas–bawah 15px. • text-align: center;  Isi rata tengah. • position: fixed;  Posisi tetap di layar meski di-scroll. • top: 0; left: 0;  Menempel di atas kiri layar. • z-index: 1000;  Agar berada di atas elemen lain. 4. .LINK DALAM NAV ( nav a) = Bagian ini mengatur tampilan link (anchor <a>) yang ada di dalam navigasi (<nav>). • color: #fff;  Warna teks putih. • margin: 0 20px;  Jarak kanan–kiri antar link 20px. • text-decoration: none; Menghilangkan garis bawah link. • font-weight: 500;  Tebal huruf medium. • transition: color 0.3s; Animasi perubahan warna 0,3 detik. 5. .EFEK HOVER LINK=  • Saat diarahkan kursor, warna teks link berubah menjadi merah muda 6. .SECTION=Bagian ini mengatur tampilan section (bagian konten halaman). Biasanya dipakai untuk area utama seperti "Landing Page" atau "About Me". • height: 100vh;  Tinggi penuh layar (viewport height). • display: flex; Mengaktifkan flexbox untuk tata letak. • justify-content: center;  Isi rata tengah secara horizontal. • align-items: center; Isi rata tengah secara vertikal. • flex-direction: column; Elemen disusun ke bawah (kolom). • text-align: center;  Teks rata tengah. • padding: 20px; Jarak dalam 20px. 7. BODY=  • Bagian latar belakang halaman menjadi merah 
-
- 8. JUDUL DI LANDING(.landing h1) = Kode ini mengatur tampilan judul utama (<h1>) yang berada di dalam section dengan class .landing. Biasanya ini teks pembuka di halaman depan (Landing Page). • font-size: 2.5rem; Ukuran teks besar (1 rem = ukuran font default browser). • margin-top: 20px;  Jarak atas 20px. • color: #fff; Warna teks putih. 9. Profile Icon (.profile-icon) = Kode ini mengatur tampilan wadah foto profil agar berbentuk lingkaran dan rapi. • width: 200px; height: 200px; Ukuran kotak foto 200x200px. • border-radius: 50%;  Membuat foto berbentuk lingkaran. • overflow: hidden;  Bagian gambar di luar lingkaran dipotong. • margin: auto 20px; Tengah secara otomatis dengan jarak kanan–kiri 20px. 10. GAMBAR DALAM PROFILE (profile-icon img)= Kode ini mengatur gambar (<img>) yang ada di dalam wadah foto profil (.profile-icon) supaya pas menutupi area lingkaran dengan rapi. • width: 100%; height: 100%;  Gambar mengisi penuh kotak lingkaran. • object-fit: cover;  Memastikan gambar tetap proporsional dan menutupi seluruh area (tidak gepeng).             
-
-   PENJELASAN BAGIAN CV HTML: 
-PENJELASAN: • <nav> = menu navigasi. • <a href = link ke halaman lain. • <section> = bagian besar dari halaman. • <div> = wadah/kotak pengelompokkan elemen. • <h1>, <h2>, <h3> = judul dengan level berbeda. • <p> = paragraf teks. • <ul> & <li> = daftar poin. • <img> = menampilkan gambar.  
-
-
-1. TRUKTUR DASAR HTML • <!DOCTYPE html>  Menentukan dokumen ini menggunakan HTML5. • <html lang="en" Elemen root HTML, dengan bahasa = Inggris. • <head>  Bagian informasi halaman (tidak tampil di layar). • <meta charset="UTF-8"  Mengatur karakter encoding ke UTF-8 (mendukung semua huruf termasuk simbol). • <meta name="viewport" content="width=device-width, initial-scale=1.0" Membuat tampilan responsif di perangkat mobile. • <title>CV</title>  Judul halaman (tampil di tab browser). • <link rel="stylesheet" href="cvstyle.css"  Menghubungkan file CSS eksternal bernama cvstyle.css. 2. NAVIGASI=Jadi ini adalah menu navigasi sederhana dengan 3 link: Home, CV, Portfolio. • <nav>  Bagian khusus untuk menu navigasi. • <a href="..."...</a>  Link (anchor). • href="index.html"  Jika diklik, menuju file index.html. • Teks di dalam <a> adalah yang tampil (misalnya: “Home”). 3. SECTION UTAMA CV • <section>  Bagian konten utama. id="cv" membuatnya bisa dipanggil dengan CSS/JavaScript. • <div class="cv-container" Pembungkus (container) untuk isi CV, memudahkan styling.  4. PROFILE • <div class="profile-row"  Baris khusus profil. • <div class="profile-photo"  Wadah untuk foto profil. • <img src="DSC04723.jpg" alt="Foto Profil Theo" •  Gambar profil. • src = lokasi file gambar. • alt = teks alternatif (muncul jika gambar gagal dimuat). • <div class="profile-info" Wadah untuk teks profil. • <h1> = Judul utama Nama lengkap. • <h3> = Subjudul  Profesi. • <p> = Paragraf Email.  5. BAGIAN ABOUT ME  • <div class="cv-section"  Satu bagian CV . • <h2>  Judul bagian (About Me). • <p>  Isi berupa teks perkenalan, cerita singkat tentang diri dan profesi.  
-
- 6. BAGIAN PENDIDIKAN  • <h2>  Judul bagian (Pendidikan). • <ul>  Unordered list (daftar tanpa angka). • <li>  Item daftar.  7. BAGIAN SKILS • <h2>  Judul bagian (My Skills). • <p>  Paragraf berisi daftar kemampuan (Skill yang dimiliki).   PENJELASAN  CVSTYLE.CSS  
-  
-
-
-PENJELASAN:  1. IMPORT FONT  • @import  mengambil font dari Google Fonts. • Poppins nama font yang digunakan. • wght=400;600  bobot font (400 = normal, 600 = semi-bold). • display=swap  agar font default diganti ke Poppins ketika sudah selesai dimuat.  2. BODY  • body ‚ elemen utama seluruh halaman. • font-family ‚ jenis font. Jika Poppins tidak ada, maka fallback ke sans-serif.  3. NA VBAR  •  width: 100%  navbar selebar layar. •  background-color: #000  warna hitam •  padding: 15px 0  jarak dalam atas & bawah 15px. •  text-align: center  teks di tengah. •  position: fixed navbar tetap di atas meski halaman discroll. •  top: 0; left: 0  menempel di kiri atas. •  z-index: 1000  ditampilkan paling atas dibanding elemen lain.  4. NA VBAR LINK =  gaya tampilan untuk link menu navigasi di bagian atas website.  • color  warna teks putih. • margin: 0 20px  jarak horizontal antar link 20px. • text-decoration: none  menghilangkan garis bawah. • font-weight: 500  tebal sedang. • transition: color 0.3s animasi perubahan warna dalam 0.3 detik. • hover  ketika kursor diarahkan, warnanya berubah.  5. CV SECTION= bagian-bagian isi CV yang berisi informasi penting (seperti pengalaman kerja, pendidikan, atau keterampilan) yang ditata dengan rapi.  • max-width: 900px  lebar maksimal 900px. • margin: 100px auto 50px  atas 100px, bawah 50px, kanan-kiri otomatis (tengah). • padding: 20px  jarak dalam 20px. • text-align: center teks di tengah.  6. JUDUL CV  • font-size: 2rem ukuran font besar (rem = relatif ke root). • margin-top: 10px  jarak atas. • font-weight: bold teks tebal. 
-
-7. SUB JUDUL  • font-size  lebih kecil dari h1. • font-weight: normal  tidak tebal. • color: #ddd  abu-abu muda.   8. EMAIL  • margin-bottom: 30px  jarak bawah. • color: #bbb  abu-abu lebih gelap.  9. JUDUL SECTION  • border-bottom  garis bawah putih. • padding-bottom  jarak isi bawah 5px. • margin-bottom  jarak antar elemen. • text-transform: uppercase  huruf besar semua.  10. PARAGAF LIST  • line-height: 1.6  jarak antar baris agar lebih rapi. • color: #eee  abu-abu terang.  • list-style: none  menghilangkan bullet list. • padding-left: 0  rapat ke kiri. • margin: 5px 0 jarak antar list.   11.  PROFILE ROW = Profile Row adalah baris dalam CV yang berisi foto profil di samping kiri dan informasi pribadi di samping kanan, ditata menggunakan Flexbox agar rapi dalam satu garis horizontal.  • display: flex membuat layout fleksibel. • align-items: center rata tengah secara vertikal. • justify-content: flex-start  isi mulai dari kiri. • gap: 20px  jarak antar item. • margin-bottom: 40px  jarak bawah antar row.  12. FOTO PROFIL  • width & height: 170px ukuran kotak foto. • border-radius: 50%  membuat foto bulat. • overflow: hidden  bagian luar lingkaran dipotong. • flex-shrink: 0 tidak mengecil saat layar kecil. • object-fit: cover gambar mengisi kotak tanpa distorsi.   
-
-13. INFO PROFIL  • h1 untuk nama utama (misalnya: John Doe). • font-size: 1.8rem  ukuran huruf besar (rem = relatif terhadap ukuran font root). • font-weight: bold  dibuat tebal agar lebih menonjol.  • h3  teks sub-judul, biasanya untuk posisi/jabatan (contoh: Frontend Developer). • font-size: 1.1rem  lebih kecil dari nama, agar terlihat hierarki. • font-weight: normal  tidak terlalu tebal, lebih ringan. • margin: 5px 0  jarak kecil atas-bawah supaya teks tidak menempel. • color: #ddd  abu-abu terang, lebih lembut dibanding nama.  • .email  teks khusus email atau kontak. • font-size: 1rem  ukuran normal, cukup kecil. • color: #bbb abu-abu agak gelap, lebih redup dibanding nama & jabatan.   14. BOX CV  • background-color  warna merah tua. • border-radius: 15px  sudut melengkung. • padding: 40px jarak isi. • width: 90% & max-width: 1000px  lebar fleksibel. • margin: 1px auto 90px  posisi tengah. • box-shadow  bayangan lembut. • inline-block  tampil seperti blok tapi fleksibel.   15. LAY OUT CV  • display: flex  layout fleksibel. • justify-content: center  isi di tengah horizontal. • align-items: flex-start isi mulai dari atas. • padding: 100px 20px 60px  jarak isi: atas 100px, kanan kiri 20px, bawah 60px.                
-
-PENJELASAN BAGIAN PORTOFOLIO HTML  
-     
+## 📂 Struktur Project
+📁 my-website
+├── index.html
+├── cv.html
+├── portfolio.html
+├── index.css
+├── cvstyle.css
+├── portfolio.css
+└── img/
+└── DSC04273.JPG
 
 
-PENJELASAN ATRIBUT : • src (source) → Lokasi file gambar/media. • Contoh: src="foto.jpg". • href (hyperlink reference) → Alamat tujuan link. • Bisa ke file lain (cv.html) atau website (https://google.com). • alt (alternative text) → Teks alternatif jika gambar tidak muncul. • class → Label untuk elemen HTML supaya bisa diatur dengan CSS. • Contoh: class="portfolio-item". • id → Identitas unik elemen HTML. • Contoh: id="portfolio". • target="_blank" → Membuka link di tab baru. • <div> → Elemen pembungkus (box/kotak). • <br> → Pindah baris.   PENJELASAN:  1. BAGIAN AWAL   • <!DOCTYPE html>Menentukan bahwa dokumen ini adalah HTML5. • <html lang="en"  Membuka dokumen HTML dengan bahasa utama English (en). • <head> → Bagian untuk metadata (informasi tentang halaman, bukan konten utama). • <meta charset="UTF-8" Menentukan encoding karakter UTF-8 (supaya teks seperti simbol atau bahasa non-latin tampil dengan benar). • <meta name="viewport" content="width=device-width, initial-scale=1.0"Membuat halaman responsif di perangkat mobile (menyesuaikan ukuran layar). • <title>PortfolioTheo</title>Judul halaman (ditampilkan di tab browser). • <link rel="stylesheet" href="portfolio.css" Menghubungkan file CSS eksternal bernama portfolio.css untuk styling.   2. BAGIAN NA VIGASI  • <a> ‚Üí Tag hyperlink (tautan). • href="index.html" ‚Üí Atribut href menentukan alamat tujuan link. • Contoh: jika diklik, akan membuka file index.html. • Jadi tiga link ini adalah menu navigasi: • Home • CV • Portfolio  3. BAGIAN PORTOFOLIO   •  <section id="portfolio" Bagian khusus halaman dengan id portfolio. • <div class="portfolio-header" Kotak pembungkus (header untuk portfolio). • <div class="logo" Membuat div khusus logo. • <img src="2.jpg" alt="Logo Arka Bali" Menampilkan gambar logo. • src="2.jpg" Atribut src (source) menentukan lokasi gambar. 
+---
 
-• alt="Logo Arka Bali" Atribut alt memberi teks alternatif jika gambar gagal dimuat (juga membantu SEO & aksesibilitas). •  <h1>LOGO ARKA VISUAL</h1> Judul besar (heading level 1).   4. BAGIAN DESKRIPSI  •  <div class="intro" ‚ Bagian pengenalan. •  <div class="profile-photo" <img src="DSC04273.JPG" alt="Foto Theo" </div> • Menampilkan foto profil Theo. •  <h1> Judul besar sambutan. • <p>Paragraf berisi deskripsi usaha. • <br> Break line (pindah baris). • <a href="https://..." target="_blank" class="ig-Link" • href ‚ Tautan menuju Instagram. • target="_blank" ‚ Membuka link di tab baru. • class="ig-Link" ‚ Memberi class supaya bisa di-style dengan CSS.  5. GALERI FOTO  • <div class="portfolio-gallery" ‚Kontainer untuk galeri foto. • <div class="portfolio-item" Tiap kotak item foto. • <img src="7.JPG" alt="Foto 1" ‚ Gambar dalam galeri. • src="7.JPG Lokasi file gambar. • alt="Foto 1 Nama alternatif gambar. Di bawahnya, pola yang sama diulang untuk 12 foto berbeda (1.JPG, 8.JPG, 22.JPG, dst). 
+## 📌 Penjelasan File
 
-PENJELASAN CSS BAGIAN PORTOFOLIO 
-       
+### 🔹 index.html
+- Mengatur **halaman utama (Home)**.  
+- Memiliki navigasi (`<nav>`), bagian landing dengan foto profil, dan teks “WELCOME TO MY WEBSITE”.  
 
+### 🔹 index.css
+- Mengatur tampilan `index.html`.  
+- Menggunakan font *Poppins*.  
+- Navbar fixed di atas, background hitam.  
+- Foto profil bulat, section rata tengah, background merah.  
 
-PENJELASAN:  1. IMPORT  • Mengimpor font "Poppins" dari Google Fonts agar bisa digunakan dalam dokumen CSS/HTML. • family=Poppins: Memilih keluarga font "Poppins". • wght@400;600: Menyediakan dua berat font, yaitu: • 400  normal • 600 semi-bold • display=swap: Memberi tahu browser untuk menggunakan font default dulu, lalu swap ke font "Poppins" begitu font selesai dimuat.  2. UNIVERSAL SELECTOR(*)  • Memberikan style dasar (reset) ke semua elemen agar konsisten di semua browser. • margin: 0;  Menghilangkan margin default semua elemen. • padding: 0;  Menghilangkan padding default semua elemen. • box-sizing: border-box;  Memastikan padding dan border termasuk dalam total ukuran elemen. Tanpa ini, ukuran bisa jadi tidak sesuai harapan. • font-family: 'Poppins', sans-serif;  Mengatur font default untuk seluruh halaman menjadi Poppins.  3. BODY  • background-color: #1A1A40; → Warna latar belakang halaman menjadi ungu gelap. • color: #fff; → Warna teks default di halaman menjadi putih.   4. NA VBAR  • width: 100%;  Navbar mengisi lebar penuh layar. • background-color: #0F0D30; Warna latar navbar (ungu tua). • padding: 10px 0;  Padding atas dan bawah 10px, kiri-kanan 0. • text-align: center; Teks/link di navbar diratakan ke tengah. • position: fixed; → Navbar selalu menempel di atas layar meskipun halaman discroll. • top: 0; left: 0;  Posisi fixed di kiri atas. • z-index: 1000;  Supaya navbar selalu di atas elemen lain.  5. LINK DALAM NA VBAR  • color: #fff; → Warna link putih. • margin: 0 20px; → Jarak antar link 20px di kiri dan kanan. • text-decoration: none; → Menghilangkan garis bawah. • font-weight: 500; → Berat font sedang. • transition: color 0.3s; → Warna akan berubah perlahan dalam 0.3 detik saat hover. • color: #ff6f61; → Saat mouse diarahkan ke link, warnanya berubah jadi oranye.  
+### 🔹 cv.html
+- Halaman **Curriculum Vitae**.  
+- Terdiri dari: profil + foto, about me, pendidikan, skills.  
+- Menggunakan list (`<ul><li>`) dan heading (`<h1>-<h3>`).  
 
-6. CONTAINER PORTOFOLIO  • padding: 100px 20px 60px; → Padding atas 100px (agar tidak tertutup navbar), samping 20px, bawah 60px. • text-align: center; → Semua teks dalam container ini diratakan tengah.  7. HEADER PROFIL  • display: flex; → Menggunakan model flexbox untuk layout. • flex-direction: column; → Elemen anak ditumpuk secara vertikal. • align-items: center; → Semua elemen anak diratakan ke tengah secara horizontal. • text-align: center; → Teks dalam elemen juga diratakan tengah. • margin-bottom: 40px; → Memberi jarak ke bawah agar tidak menempel eleme elanjutnya.  8. INFORMASI PROFIL  •   margin-bottom: 20px; → Jarak antara teks info dengan elemen berikutnya (foto). •   ont-size: 32px; → Ukuran font judul nama. •   font-size: 18px; font-weight: 600; → Ukuran dan ketebalan deskripsi.  9. PHOTO PROFIL  • width & height: Membuat wadah foto 150px x 150px. • border-radius: 50%; → Membuat bentuk lingkaran sempurna. • overflow: hidden; → Bagian gambar yang keluar dari lingkaran akan disembunyikan. • margin-top: 10px; → Memberi jarak dari elemen atasnya. • object-fit: cover; → Gambar menyesuaikan wadah dengan memotong bagian yang berlebih agar proporsional dan tetap mengisi penuh.  10.  JUDUL PORTOFOLIO •  font-size: 2rem: Ukuran besar untuk judul. •  margin: Jarak atas dan bawah 30px. 11. GALERI GRID • display: grid: Gunakan Grid Layout. • grid-template-columns: repeat(3, 1fr): 3 kolom sama besar. • gap: 15px: Jarak antar item. • padding: 0 10px: Spasi kiri dan kanan.     
+### 🔹 cvstyle.css
+- Memberikan style untuk halaman CV.  
+- Foto profil bulat, box CV warna merah tua dengan shadow.  
+- Layout memakai flexbox.  
 
-12. ITEM  PORTOFOLIO • background-color: #999: Warna abu-abu sebagai placeholder. • aspect-ratio: 1 / 1: Bentuk kotak (lebar = tinggi). • border-radius: 10px: Sudut membulat. • display: flex: Untuk memposisikan isi di tengah. • justify-content dan align-items: Tengah horizontal dan vertikal. • cursor: pointer: Saat hover, kursor berubah jadi tangan.  13. IS DALAM PORTOFOLIO • =Gambar di dalam item memenuhi kotak. • object-fit: cover: Gambar menyesuaikan tanpa merusak rasio. • border-radius: Sama dengan kontainernya agar rapi.  TAMPILAN WEBSITE 
- 
+### 🔹 portfolio.html
+- Halaman **Portofolio**.  
+- Terdiri dari: foto profil, deskripsi singkat, link Instagram, dan galeri karya.  
+- Menggunakan grid untuk galeri gambar.  
 
+### 🔹 portfolio.css
+- Style untuk halaman portofolio.  
+- Background ungu gelap, teks putih.  
+- Galeri dibuat grid 3 kolom dengan efek hover zoom.  
 
-  
+---
 
+## 📷 Tampilan Website
+Tambahkan screenshot hasil tampilan di sini, misalnya:  
 
- 
+![Halaman Index](img/screenshot-index.png)  
+![Halaman CV](img/screenshot-cv.png)  
+![Halaman Portofolio](img/screenshot-portfolio.png)  
 
+---
 
+## ✅ Kesimpulan
+- Website terdiri dari **3 halaman utama**: Home, CV, dan Portofolio.  
+- CSS eksternal dipisahkan untuk setiap halaman.  
+- Sudah menggunakan **flexbox, grid, foto profil bulat, navbar fixed, dan desain sederhana responsif**.  
+
+---
+
+## 🚀 Cara Menjalankan
+1. Download semua file ke satu folder.  
+2. Pastikan file HTML dan CSS berada di lokasi sesuai struktur.  
+3. Buka `index.html` menggunakan browser.  
